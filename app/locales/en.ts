@@ -151,7 +151,7 @@ const en: RequiredLocaleType = {
     },
     Token: {
       Title: "API Key",
-      SubTitle: "Use your key to ignore access code limit",
+      SubTitle: "Choose to use your own Key",
       Placeholder: "OpenAI API Key",
     },
     Usage: {
