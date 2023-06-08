@@ -149,7 +149,7 @@ const cn = {
     },
     Token: {
       Title: "API Key",
-      SubTitle: "选择使用自己的 Key",
+      SubTitle: "选择使用自己的 API Key",
       Placeholder: "OpenAI API Key",
     },
 
