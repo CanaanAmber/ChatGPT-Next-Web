@@ -109,6 +109,7 @@ const en: RequiredLocaleType = {
       CheckUpdate: "Check Update",
       IsChecking: "Checking update...",
       FoundUpdate: (x: string) => `Found new version: ${x}`,
+      GoToUpdate: "Update",
     },
     SendKey: "Send Key",
     Theme: "Theme",
@@ -150,7 +151,7 @@ const en: RequiredLocaleType = {
     },
     Token: {
       Title: "API Key",
-      SubTitle: "Choose to use your own API Key",
+      SubTitle: "Use your key to ignore access code limit",
       Placeholder: "OpenAI API Key",
     },
     Usage: {
