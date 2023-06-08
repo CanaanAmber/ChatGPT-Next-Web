@@ -368,9 +368,11 @@ export function Settings() {
             {checkingUpdate ? (
               <LoadingIcon />
             ) : hasNewVersion ? (
-              <Link href={UPDATE_URL} target="_blank" className="link">
+              // 这是修改的部分，将 Link 组件替换为 div 组件
+              <div className="link"> 
                 {Locale.Settings.Update.GoToUpdate}
-              </Link>
+              </div>
+              // 修改结束
             ) : (
               <IconButton
                 icon={<ResetIcon></ResetIcon>}
