@@ -109,7 +109,6 @@ const en: RequiredLocaleType = {
       CheckUpdate: "Check Update",
       IsChecking: "Checking update...",
       FoundUpdate: (x: string) => `Found new version: ${x}`,
-      GoToUpdate:,
     },
     SendKey: "Send Key",
     Theme: "Theme",
