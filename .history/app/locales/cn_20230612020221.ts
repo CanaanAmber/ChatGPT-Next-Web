@@ -3,8 +3,8 @@ import { SubmitKey } from "../store/config";
 const cn = {
   WIP: "该功能仍在开发中……",
   Error: {
-    Unauthorized:
-      "访问密码不正确或为空，请前往[登录](/#/auth)页输入正确的访问密码。如果你输入了自己的API key，请前往[设置](/#/settings)页删除。",
+    Unauthorized:访问密码不正确或为空，请前往[登录](/#/auth)页输入正确的访问密码。如果你输入了自己的API key，请前往[设置](/#/settings)页删除。
+      "",
   },
   Auth: {
     Title: "需要密码",
