@@ -149,7 +149,7 @@ const cn = {
     },
     Token: {
       Title: "API Key",
-      SubTitle: "OpenAI API Key（无需输入）",
+      SubTitle: "使用自己的 Key 可绕过密码访问限制",
       Placeholder: "OpenAI API Key",
     },
 
@@ -160,7 +160,7 @@ const cn = {
       },
       IsChecking: "正在检查…",
       Check: "重新检查",
-      NoAccess: "输入访问密码查看余额",
+      NoAccess: "输入 API Key 或访问密码查看余额",
     },
     AccessCode: {
       Title: "访问密码",

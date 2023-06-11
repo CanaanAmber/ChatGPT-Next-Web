@@ -7,12 +7,34 @@ export type { LocaleType, RequiredLocaleType } from "./cn";
 export const AllLangs = [
   "en",
   "cn",
+  "tw",
+  "fr",
+  "es",
+  "it",
+  "tr",
+  "jp",
+  "de",
+  "vi",
+  "ru",
+  "cs",
+  "ko",
 ] as const;
 export type Lang = (typeof AllLangs)[number];
 
 export const ALL_LANG_OPTIONS: Record<Lang, string> = {
   cn: "简体中文",
   en: "English",
+  tw: "繁體中文",
+  fr: "Français",
+  es: "Español",
+  it: "Italiano",
+  tr: "Türkçe",
+  jp: "日本語",
+  de: "Deutsch",
+  vi: "Tiếng Việt",
+  ru: "Русский",
+  cs: "Čeština",
+  ko: "한국어",
 };
 
 const LANG_KEY = "lang";

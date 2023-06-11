@@ -1,5 +1,6 @@
 import CN from "./cn";
 import EN from "./en";
+
 import { merge } from "../utils/merge";
 
 export type { LocaleType, RequiredLocaleType } from "./cn";
@@ -7,13 +8,14 @@ export type { LocaleType, RequiredLocaleType } from "./cn";
 export const AllLangs = [
   "en",
   "cn",
+
 ] as const;
 export type Lang = (typeof AllLangs)[number];
 
 export const ALL_LANG_OPTIONS: Record<Lang, string> = {
   cn: "简体中文",
   en: "English",
-};
+
 
 const LANG_KEY = "lang";
 const DEFAULT_LANG = "en";

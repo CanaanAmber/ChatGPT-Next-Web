@@ -4,7 +4,7 @@ const cn = {
   WIP: "该功能仍在开发中……",
   Error: {
     Unauthorized:
-      "访问密码不正确或为空，请前往[登录](/#/auth)页输入正确的访问密码",
+      "访问密码不正确或为空，请前往[登录](/#/auth)页输入正确的访问密码，或者在[设置](/#/settings)页填入你自己的 OpenAI API Key。",
   },
   Auth: {
     Title: "需要密码",
@@ -149,7 +149,7 @@ const cn = {
     },
     Token: {
       Title: "API Key",
-      SubTitle: "OpenAI API Key（无需输入）",
+      SubTitle: "使用自己的 Key 可绕过密码访问限制",
       Placeholder: "OpenAI API Key",
     },
 
@@ -160,7 +160,7 @@ const cn = {
       },
       IsChecking: "正在检查…",
       Check: "重新检查",
-      NoAccess: "输入访问密码查看余额",
+      NoAccess: "输入 API Key 或访问密码查看余额",
     },
     AccessCode: {
       Title: "访问密码",
