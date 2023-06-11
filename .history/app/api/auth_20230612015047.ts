@@ -43,7 +43,7 @@ export function auth(req: NextRequest) {
   if (serverConfig.needCode && !serverConfig.codes.has(hashedCode)) {
     return {
       error: true,
-      msg: token ? "User api key is not allowed" : (!accessCode ? "Empty access code" : "Wrong access code"),
+      msg: token ? "User api key is not allowed" : (!accessCode ? "Empty access code" : "wrong access code"),
     };
   }
   
@@ -61,7 +61,7 @@ export function auth(req: NextRequest) {
   if (token) {
     return {
       error: true,
-      msg: "User api key is not allowed",
+      msg: "user api key is not allowed",
     };
   }
 

@@ -61,7 +61,7 @@ export function auth(req: NextRequest) {
   if (token) {
     return {
       error: true,
-      msg: "User api key is not allowed",
+      msg: "user api key is not allowed",
     };
   }
 
