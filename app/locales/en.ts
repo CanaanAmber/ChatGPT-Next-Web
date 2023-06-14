@@ -164,7 +164,7 @@ const en: RequiredLocaleType = {
     },
     Token: {
       Title: "API Key",
-      SubTitle: "Use your own Key to bypass password access restrictions (temporarily disabled) ",
+      SubTitle: "Use your key to ignore access code limit (temporarily disabled) ",
       Placeholder: "OpenAI API Key",
     },
     Usage: {
@@ -174,7 +174,7 @@ const en: RequiredLocaleType = {
       },
       IsChecking: "Checking...",
       Check: "Check",
-      NoAccess: "Enter API Key to check balance",
+      NoAccess: "Enter Access Code to check balance",
     },
     AccessCode: {
       Title: "Access Code",
