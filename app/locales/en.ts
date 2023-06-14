@@ -122,7 +122,7 @@ const en: RequiredLocaleType = {
       CheckUpdate: "Check Update",
       IsChecking: "Checking update...",
       FoundUpdate: (x: string) => `Found new version: ${x}`,
-      GoToUpdate: "Update",
+      GoToUpdate: "Waiting for an administrator update",
     },
     SendKey: "Send Key",
     Theme: "Theme",
@@ -164,7 +164,7 @@ const en: RequiredLocaleType = {
     },
     Token: {
       Title: "API Key",
-      SubTitle: "OpenAI API Key （No input required） ",
+      SubTitle: "Use your own Key to bypass password access restrictions (temporarily disabled) ",
       Placeholder: "OpenAI API Key",
     },
     Usage: {
