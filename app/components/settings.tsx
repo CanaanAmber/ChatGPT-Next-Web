@@ -550,8 +550,8 @@ export function Settings() {
 
           {!accessStore.hideUserApiKey ? (
             <ListItem
-              title={Locale.Settings.Title}
-              subTitle={Locale.Settings.SubTitle}
+              title={Locale.Settings.Endpoint.Title}
+              subTitle={Locale.Settings.Endpoint.SubTitle}
             >
               <input
                 type="text"
