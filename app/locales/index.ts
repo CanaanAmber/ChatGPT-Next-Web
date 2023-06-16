@@ -1,18 +1,15 @@
-import CN from "./cn";
-import EN from "./en";
+import cn from "./cn";
+import en from "./en";
+
 import { merge } from "../utils/merge";
 
 import type { LocaleType } from "./cn";
 export type { LocaleType, PartialLocaleType } from "./cn";
 
-export const AllLangs = [
-  "en",
-  "cn",
-] as const;
-export type Lang = (typeof AllLangs)[number];
 const ALL_LANGS = {
   cn,
   en,
+
 };
 
 export type Lang = keyof typeof ALL_LANGS;
@@ -22,6 +19,7 @@ export const AllLangs = Object.keys(ALL_LANGS) as Lang[];
 export const ALL_LANG_OPTIONS: Record<Lang, string> = {
   cn: "简体中文",
   en: "English",
+
 };
 
 const LANG_KEY = "lang";
@@ -79,14 +77,3 @@ export function changeLang(lang: Lang) {
   setItem(LANG_KEY, lang);
   location.reload();
 }
-
-const fallbackLang = EN;
-const targetLang = {
-  en: EN,
-  cn: CN,
-}[getLang()] as typeof CN;
-
-// if target lang missing some fields, it will use fallback lang string
-merge(fallbackLang, targetLang);
-
-export default fallbackLang as typeof CN;
