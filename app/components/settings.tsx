@@ -432,7 +432,7 @@ export function Settings() {
           <ListItem
            title="当前版本" // 直接写死 "当前版本"，不再需要动态生成
           >
-           {currentVersion ?? "unknown"} // 将版本号显示在右边
+           {currentVersion ?? "unknown"} 
           </ListItem>
 
 
