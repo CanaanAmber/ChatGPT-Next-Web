@@ -443,7 +443,7 @@ export function Settings() {
               <LoadingIcon />
             ) : hasNewVersion ? (
               // 这是修改的部分，将 Link 组件替换为 div 组件
-              <div href={updateUrl} target="_blank" className="link"> 
+              <div className="link"> 
                 {Locale.Settings.Update.GoToUpdate}
               </div>
               // 修改结束
