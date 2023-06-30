@@ -147,7 +147,7 @@ const en: LocaleType = {
       CheckUpdate: "Check Update",
       IsChecking: "Checking update...",
       FoundUpdate: (x: string) => `Found new version: ${x}`,
-      GoToUpdate: "Waiting for an administrator update",
+      GoToUpdate: "Update",
     },
     SendKey: "Send Key",
     Theme: "Theme",

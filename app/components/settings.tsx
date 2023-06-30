@@ -430,30 +430,15 @@ export function Settings() {
           </ListItem>
 
           <ListItem
-            title={Locale.Settings.Update.Version(currentVersion ?? "unknown")}
-            subTitle={
-              checkingUpdate
-                ? Locale.Settings.Update.IsChecking
-                : hasNewVersion
-                ? Locale.Settings.Update.FoundUpdate(remoteId ?? "ERROR")
-                : Locale.Settings.Update.IsLatest
-            }
+            title="当前版本" // 直接写死 "当前版本"，不再需要动态生成
+            subTitle={currentVersion ?? "unknown"} // 将版本号显示在 subTitle 中
           >
-            {checkingUpdate ? (
-              <LoadingIcon />
-            ) : hasNewVersion ? (
-              // 这是修改的部分，将 Link 组件替换为 div 组件
-              <div className="link"> 
-                {Locale.Settings.Update.GoToUpdate}
-              </div>
-              // 修改结束
-            ) : (
-              <IconButton
-                icon={<ResetIcon></ResetIcon>}
-                text={Locale.Settings.Update.CheckUpdate}
-                onClick={() => checkUpdate(true)}
-              />
-            )}
+           {/* 移除了检查更新和发现新版本的逻辑，因为你表示不再需要这些功能 */}
+          <IconButton
+           icon={<ResetIcon></ResetIcon>}
+           text={Locale.Settings.Update.CheckUpdate}
+           onClick={() => checkUpdate(true)}
+           />
           </ListItem>
 
           <ListItem title={Locale.Settings.SendKey}>
