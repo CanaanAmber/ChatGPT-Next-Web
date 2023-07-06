@@ -13,6 +13,7 @@ import no from "./no";
 import cs from "./cs";
 import ko from "./ko";
 import ar from "./ar";
+import bn from "./bn";
 import { merge } from "../utils/merge";
 
 import type { LocaleType } from "./cn";
