@@ -441,7 +441,6 @@ export function Settings() {
            <div>{currentVersion ?? "unknown"}</div> 
           </ListItem>
 
-
           <ListItem title={Locale.Settings.SendKey}>
             <Select
               value={config.submitKey}
