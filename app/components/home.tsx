@@ -115,7 +115,10 @@ const loadAsyncGoogleFont = () => {
     getClientConfig()?.buildMode === "export" ? remoteFontUrl : proxyFontUrl;
   linkEl.rel = "stylesheet";
   linkEl.href =
-    googleFontUrl + "/css2?family=" + encodeURIComponent("Noto Sans:wght@300;400;700;900") + "&display=swap";
+    googleFontUrl +
+    "/css2?family=" +
+    encodeURIComponent("Noto Sans:wght@300;400;700;900") +
+    "&display=swap";
   document.head.appendChild(linkEl);
 };
 
@@ -125,6 +128,8 @@ function Screen() {
   const isHome = location.pathname === Path.Home;
   const isAuth = location.pathname === Path.Auth;
   const isMobileScreen = useMobileScreen();
+  const shouldTightBorder =
+    config.tightBorder && !isMobileScreen && !getClientConfig()?.isApp;
 
   useEffect(() => {
     loadAsyncGoogleFont();
