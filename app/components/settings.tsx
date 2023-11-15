@@ -1033,7 +1033,7 @@ export function Settings() {
             </>
           )}
 
-          {!shouldHideBalanceQuery ? (
+          {!shouldHideBalanceQuery && !clientConfig?.isApp ? (
             <ListItem
               title={Locale.Settings.Usage.Title}
               subTitle={
