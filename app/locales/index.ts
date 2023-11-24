@@ -1,5 +1,6 @@
 import cn from "./cn";
 import en from "./en";
+import pt from "./pt";
 import tw from "./tw";
 import id from "./id";
 import fr from "./fr";
