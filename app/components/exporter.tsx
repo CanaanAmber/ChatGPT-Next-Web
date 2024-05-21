@@ -547,9 +547,9 @@ export function ImagePreviewer(props: {
           </div>
 
           <div>
-            <div className={styles["main-title"]}>ChatGPT{/* Chat界面个性化修改 */}</div> 
+            <div className={styles["main-title"]}>ChatGPT {/* 分享界面个性化修改，下同 */} </div> 
             <div className={styles["sub-title"]}>
-              分享自琥珀的ChatGPT  {/* 分享界面个性化修改 */}
+              分享自琥珀的ChatGPT
             </div>
             <div className={styles["icons"]}>
               <ExportAvatar avatar={config.avatar} />

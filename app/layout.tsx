@@ -10,7 +10,7 @@ import { GoogleTagManager } from "@next/third-parties/google";
 const serverConfig = getServerSideConfig();
 
 export const metadata: Metadata = {
-  title: "ChatGPT Cloud Amber",
+  title: "ChatGPT Cloud Amber", //浏览器标签界面个性化修改，下同
   description: "Your personal ChatGPT Chat Bot.",
   viewport: {
     width: "device-width",

@@ -704,7 +704,7 @@ export function Settings() {
           </ListItem>
 
           <ListItem
-           title="当前版本" // 直接写死 "当前版本"，不再需要动态生成
+           title="当前版本" // 直接写死 "当前版本"，版本号不再需要动态拉取，下同
           >
            <div>{currentVersion ?? "unknown"}</div> 
           </ListItem>
