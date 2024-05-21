@@ -1,6 +1,6 @@
 import { Mask } from "../store/mask";
 import { CN_MASKS } from "./cn";
-import { EN_MASKS } from "./en";
+import { EN_MASKS } from "./en";   //取消多语言支持，减少修改工作量，下同
 
 import { type BuiltinMask } from "./typing";
 export { type BuiltinMask } from "./typing";

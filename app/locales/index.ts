@@ -1,5 +1,5 @@
 import cn from "./cn";
-import en from "./en";
+import en from "./en";  //取消多语言支持，减少修改工作量，下同
 import pt from "./pt";
 import tw from "./tw";
 import id from "./id";
