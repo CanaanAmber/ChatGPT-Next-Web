@@ -140,11 +140,9 @@ function Screen() {
     <div
       className={
         styles.container +
-        ` ${
-          config.tightBorder && !isMobileScreen
-            ? styles["tight-container"]
-            : styles.container
-        } `
+        ` ${shouldTightBorder ? styles["tight-container"] : styles.container} ${
+          getLang() === "ar" ? styles["rtl-screen"] : ""
+        }`
       }
     >
       {isAuth ? (
