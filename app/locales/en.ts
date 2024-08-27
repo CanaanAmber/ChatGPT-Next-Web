@@ -10,7 +10,7 @@ const en: LocaleType = {
   Error: {
     Unauthorized: isApp
       ? "Invalid API Key, please check it in [Settings](/#/settings) page."
-      : "Unauthorized access, please enter access code in [auth](/#/auth) page.", //因为取消了“输入API Key”的登录方式”，所以同步删除相关提示，下同
+      : "Unauthorized access, please enter access code in [auth](/#/auth) page, or enter your OpenAI API Key.",
   },
   Auth: {
     Title: "Need Access Code",
@@ -283,7 +283,7 @@ const en: LocaleType = {
       },
       IsChecking: "Checking...",
       Check: "Check",
-      NoAccess: "Enter Access Code to check balance",
+      NoAccess: "Enter API Key to check balance",
     },
     Access: {
       AccessCode: {
