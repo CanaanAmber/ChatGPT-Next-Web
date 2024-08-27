@@ -304,6 +304,9 @@ export function SideBar(props: { className?: string }) {
                 />
               </Link>
             </div>
+
+            {/* 注释掉以下代码块以隐藏项目的GitHub按钮 */}
+            {/* 
             <div className={styles["sidebar-action"]}>
               <a href={REPO_URL} target="_blank" rel="noopener noreferrer">
                 <IconButton
@@ -313,6 +316,7 @@ export function SideBar(props: { className?: string }) {
                 />
               </a>
             </div>
+            */}
           </>
         }
         secondaryAction={
